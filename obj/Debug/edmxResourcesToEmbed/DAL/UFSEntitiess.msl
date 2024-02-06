@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ufsAgreementModelStoreContainer" CdmEntityContainer="UFSEntitiess">
+    <EntitySetMapping Name="AccountTypes">
+      <EntityTypeMapping TypeName="ufsAgreementModel.AccountType">
+        <MappingFragment StoreEntitySet="AccountType">
+          <ScalarProperty Name="AccountTypeId" ColumnName="AccountTypeId" />
+          <ScalarProperty Name="AccountTitle" ColumnName="AccountTitle" />
+          <ScalarProperty Name="AccountLevel" ColumnName="AccountLevel" />
+          <ScalarProperty Name="AccountDescription" ColumnName="AccountDescription" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="ufsAgreementModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Functions">
+      <EntityTypeMapping TypeName="ufsAgreementModel.Function">
+        <MappingFragment StoreEntitySet="Function">
+          <ScalarProperty Name="FunctionId" ColumnName="FunctionId" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ufsAgreementModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="ufsAgreementModel.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requisitions">
+      <EntityTypeMapping TypeName="ufsAgreementModel.Requisition">
+        <MappingFragment StoreEntitySet="Requisition">
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="FunctionId" ColumnName="FunctionId" />
+          <ScalarProperty Name="Geography" ColumnName="Geography" />
+          <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+          <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+          <ScalarProperty Name="CustomerBackground" ColumnName="CustomerBackground" />
+          <ScalarProperty Name="BrandUserCustomer" ColumnName="BrandUserCustomer" />
+          <ScalarProperty Name="PromotionDesc" ColumnName="PromotionDesc" />
+          <ScalarProperty Name="SKUDetail" ColumnName="SKUDetail" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="ROI" ColumnName="ROI" />
+          <ScalarProperty Name="GM" ColumnName="GM" />
+          <ScalarProperty Name="MinGSV" ColumnName="MinGSV" />
+          <ScalarProperty Name="MaxGSV" ColumnName="MaxGSV" />
+          <ScalarProperty Name="MinTTS" ColumnName="MinTTS" />
+          <ScalarProperty Name="MaxTTS" ColumnName="MaxTTS" />
+          <ScalarProperty Name="RequestorComments" ColumnName="RequestorComments" />
+          <ScalarProperty Name="RegionHeadComments" ColumnName="RegionHeadComments" />
+          <ScalarProperty Name="FBPComments" ColumnName="FBPComments" />
+          <ScalarProperty Name="MFComments" ColumnName="MFComments" />
+          <ScalarProperty Name="CHComments" ColumnName="CHComments" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TotalMinQtyMonthCases" ColumnName="TotalMinQtyMonthCases" />
+          <ScalarProperty Name="TotalMaxQtyMonthCases" ColumnName="TotalMaxQtyMonthCases" />
+          <ScalarProperty Name="RequisitionStatus" ColumnName="RequisitionStatus" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="IsTerminationRequested" ColumnName="IsTerminationRequested" />
+          <ScalarProperty Name="RequisitionCounter" ColumnName="RequisitionCounter" />
+          <ScalarProperty Name="IsNewUser" ColumnName="IsNewUser" />
+          <ScalarProperty Name="ExistingGM" ColumnName="ExistingGM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requisition_Detail">
+      <EntityTypeMapping TypeName="ufsAgreementModel.Requisition_Detail">
+        <MappingFragment StoreEntitySet="Requisition_Detail">
+          <ScalarProperty Name="RequisitionDetailsId" ColumnName="RequisitionDetailsId" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="SKUCode" ColumnName="SKUCode" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="MinQtyMonthCases" ColumnName="MinQtyMonthCases" />
+          <ScalarProperty Name="MaxQtyMonthCases" ColumnName="MaxQtyMonthCases" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionApprovalStatusDetails">
+      <EntityTypeMapping TypeName="ufsAgreementModel.RequisitionApprovalStatusDetail">
+        <MappingFragment StoreEntitySet="RequisitionApprovalStatusDetail">
+          <ScalarProperty Name="RequisitionApprovalStatusId" ColumnName="RequisitionApprovalStatusId" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionAttachements">
+      <EntityTypeMapping TypeName="ufsAgreementModel.RequisitionAttachement">
+        <MappingFragment StoreEntitySet="RequisitionAttachement">
+          <ScalarProperty Name="RequisitionAttachementId" ColumnName="RequisitionAttachementId" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="RequisitionAttachementComments" ColumnName="RequisitionAttachementComments" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="ContentData" ColumnName="ContentData" />
+          <ScalarProperty Name="format" ColumnName="format" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="fileName" ColumnName="fileName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionPopCodes">
+      <EntityTypeMapping TypeName="ufsAgreementModel.RequisitionPopCode">
+        <MappingFragment StoreEntitySet="RequisitionPopCode">
+          <ScalarProperty Name="RequisitionPopCodeId" ColumnName="RequisitionPopCodeId" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="PopCode" ColumnName="PopCode" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionSKUDetails">
+      <EntityTypeMapping TypeName="ufsAgreementModel.RequisitionSKUDetail">
+        <MappingFragment StoreEntitySet="RequisitionSKUDetail">
+          <ScalarProperty Name="RequisitionSKUDetailId" ColumnName="RequisitionSKUDetailId" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="SKUCode" ColumnName="SKUCode" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ufsAgreementModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="AccountTypeId" ColumnName="AccountTypeId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_RequisitionByCustomerWise">
+      <EntityTypeMapping TypeName="ufsAgreementModel.V_RequisitionByCustomerWise">
+        <MappingFragment StoreEntitySet="V_RequisitionByCustomerWise">
+          <ScalarProperty Name="SrNo" ColumnName="SrNo" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ContractStartDate" ColumnName="ContractStartDate" />
+          <ScalarProperty Name="ContractEndDate" ColumnName="ContractEndDate" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Background" ColumnName="Background" />
+          <ScalarProperty Name="ObjectiveAndDescription" ColumnName="ObjectiveAndDescription" />
+          <ScalarProperty Name="TM_AM" ColumnName="TM_AM" />
+          <ScalarProperty Name="RequestorComments" ColumnName="RequestorComments" />
+          <ScalarProperty Name="GSM" ColumnName="GSM" />
+          <ScalarProperty Name="GSMMessage" ColumnName="GSMMessage" />
+          <ScalarProperty Name="FinanceBusinessPartner" ColumnName="FinanceBusinessPartner" />
+          <ScalarProperty Name="FinanceBusinessPartnerMessage" ColumnName="FinanceBusinessPartnerMessage" />
+          <ScalarProperty Name="ManagerFinance" ColumnName="ManagerFinance" />
+          <ScalarProperty Name="ManagerFinanceMessage" ColumnName="ManagerFinanceMessage" />
+          <ScalarProperty Name="CountryHeadUFS" ColumnName="CountryHeadUFS" />
+          <ScalarProperty Name="CountryHeadUFSMessage" ColumnName="CountryHeadUFSMessage" />
+          <ScalarProperty Name="MinGSV" ColumnName="MinGSV" />
+          <ScalarProperty Name="MaxGSV" ColumnName="MaxGSV" />
+          <ScalarProperty Name="MinTTS" ColumnName="MinTTS" />
+          <ScalarProperty Name="MaxTTS" ColumnName="MaxTTS" />
+          <ScalarProperty Name="Decision" ColumnName="Decision" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="CurrentStatus" ColumnName="CurrentStatus" />
+          <ScalarProperty Name="PopCode" ColumnName="PopCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_RequisitionBySku">
+      <EntityTypeMapping TypeName="ufsAgreementModel.v_RequisitionBySku">
+        <MappingFragment StoreEntitySet="v_RequisitionBySku">
+          <ScalarProperty Name="SrNo" ColumnName="SrNo" />
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ContractStartDate" ColumnName="ContractStartDate" />
+          <ScalarProperty Name="ContractEndDate" ColumnName="ContractEndDate" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="SKUName" ColumnName="SKUName" />
+          <ScalarProperty Name="SKUCode" ColumnName="SKUCode" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="MinimumQuantity" ColumnName="MinimumQuantity" />
+          <ScalarProperty Name="MaximumQuantity" ColumnName="MaximumQuantity" />
+          <ScalarProperty Name="PROMOTIONCODE" ColumnName="PROMOTIONCODE" />
+          <ScalarProperty Name="TM_AM" ColumnName="TM_AM" />
+          <ScalarProperty Name="RequestorComments" ColumnName="RequestorComments" />
+          <ScalarProperty Name="GSM" ColumnName="GSM" />
+          <ScalarProperty Name="GSMMessage" ColumnName="GSMMessage" />
+          <ScalarProperty Name="FinanceBusinessPartner" ColumnName="FinanceBusinessPartner" />
+          <ScalarProperty Name="FinanceBusinessPartnerMessage" ColumnName="FinanceBusinessPartnerMessage" />
+          <ScalarProperty Name="ManagerFinance" ColumnName="ManagerFinance" />
+          <ScalarProperty Name="ManagerFinanceMessage" ColumnName="ManagerFinanceMessage" />
+          <ScalarProperty Name="CountryHeadUFS" ColumnName="CountryHeadUFS" />
+          <ScalarProperty Name="CountryHeadUFSMessage" ColumnName="CountryHeadUFSMessage" />
+          <ScalarProperty Name="PopCode" ColumnName="PopCode" />
+          <ScalarProperty Name="Decision" ColumnName="Decision" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="CurrentStatus" ColumnName="CurrentStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Categorized_DashBaord" FunctionName="ufsAgreementModel.Store.Categorized_DashBaord">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ufsAgreementModel.Categorized_DashBaord_Result">
+          <ScalarProperty Name="Categorization" ColumnName="Categorization" />
+          <ScalarProperty Name="MinGSV" ColumnName="MinGSV" />
+          <ScalarProperty Name="MaxGSV" ColumnName="MaxGSV" />
+          <ScalarProperty Name="MinTTS" ColumnName="MinTTS" />
+          <ScalarProperty Name="MaxTTS" ColumnName="MaxTTS" />
+          <ScalarProperty Name="NoOfContract" ColumnName="NoOfContract" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetRequisitionAuditById" FunctionName="ufsAgreementModel.Store.GetRequisitionAuditById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ufsAgreementModel.GetRequisitionAuditById_Result">
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="UserProcess" ColumnName="UserProcess" />
+          <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+          <ScalarProperty Name="Created_date" ColumnName="Created_date" />
+          <ScalarProperty Name="GEOGRAPHY" ColumnName="GEOGRAPHY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="StoredProcedure_RequisitionSummary" FunctionName="ufsAgreementModel.Store.StoredProcedure_RequisitionSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ufsAgreementModel.StoredProcedure_RequisitionSummary_Result">
+          <ScalarProperty Name="ContractType" ColumnName="ContractType" />
+          <ScalarProperty Name="Totalcount" ColumnName="Totalcount" />
+          <ScalarProperty Name="GSV" ColumnName="GSV" />
+          <ScalarProperty Name="TTS" ColumnName="TTS" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UFSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AccountType">
+    <Key>
+      <PropertyRef Name="AccountTypeId" />
+    </Key>
+    <Property Name="AccountTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AccountLevel" Type="Int32" />
+    <Property Name="AccountDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="VersionNo" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="Int32" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="CompanyId" />
+    </Key>
+    <Property Name="CompanyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VersionNo" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="Int32" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Requisitions" Relationship="Self.FK_Requisition_Company" FromRole="Company" ToRole="Requisition" />
+  </EntityType>
+  <EntityType Name="Function">
+    <Key>
+      <PropertyRef Name="FunctionId" />
+    </Key>
+    <Property Name="FunctionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FunctionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VersionNo" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="Int32" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Requisitions" Relationship="Self.FK_Requisition_Function" FromRole="Function" ToRole="Requisition" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="RegionId" />
+    </Key>
+    <Property Name="RegionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RegionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VersionNo" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="Int32" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Requisition">
+    <Key>
+      <PropertyRef Name="RequisitionId" />
+    </Key>
+    <Property Name="RequisitionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FunctionId" Type="Int32" />
+    <Property Name="Geography" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FromTime" Type="DateTime" Precision="3" />
+    <Property Name="ToTime" Type="DateTime" Precision="3" />
+    <Property Name="CustomerBackground" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="BrandUserCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PromotionDesc" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SKUDetail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ROI" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GM" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MinGSV" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MaxGSV" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MinTTS" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MaxTTS" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RequestorComments" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="RegionHeadComments" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="FBPComments" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="MFComments" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CHComments" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="VersionNo" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="Int32" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="TotalMinQtyMonthCases" Type="Int32" />
+    <Property Name="TotalMaxQtyMonthCases" Type="Int32" />
+    <Property Name="RequisitionStatus" Type="Int32" />
+    <Property Name="Comments" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_Requisition_Company" FromRole="Requisition" ToRole="Company" />
+    <NavigationProperty Name="Function" Relationship="Self.FK_Requisition_Function" FromRole="Requisition" ToRole="Function" />
+    <NavigationProperty Name="RequisitionDetails" Relationship="Self.FK_RequisitionDetail_Requisition1" FromRole="Requisition" ToRole="RequisitionDetail" />
+  </EntityType>
+  <EntityType Name="RequisitionApprovalStatu">
+    <Key>
+      <PropertyRef Name="RequisitionApprovalStatusId" />
+    </Key>
+    <Property Name="RequisitionApprovalStatusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RequisitionId" Type="Int32" />
+    <Property Name="RequisitionApprovalStatus" Type="Int32" />
+    <Property Name="Comments" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="VersionNo" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="Int32" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RequisitionAttachement">
+    <Key>
+      <PropertyRef Name="RequisitionAttachementId" />
+    </Key>
+    <Property Name="RequisitionAttachementId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RequisitionId" Type="Int32" />
+    <Property Name="RequisitionAttachementComments" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContentType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContentData" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="format" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VersionNo" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="Int32" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RequisitionDetail">
+    <Key>
+      <PropertyRef Name="RequisitionDetailId" />
+    </Key>
+    <Property Name="RequisitionDetailId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RequisitionId" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SKUCode" Type="Int32" />
+    <Property Name="Discount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MinQtyMonthCases" Type="Int32" />
+    <Property Name="MaxQtyMonthCases" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Requisition" Relationship="Self.FK_RequisitionDetail_Requisition1" FromRole="RequisitionDetail" ToRole="Requisition" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Domain" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AccountTypeId" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RegionId" Type="Int32" Nullable="false" />
+    <Property Name="VersionNo" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="Int32" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Requisition_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="Requisition" Type="Self.Requisition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="CompanyId" />
+      </Principal>
+      <Dependent Role="Requisition">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requisition_Function">
+    <End Role="Function" Type="Self.Function" Multiplicity="0..1" />
+    <End Role="Requisition" Type="Self.Requisition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Function">
+        <PropertyRef Name="FunctionId" />
+      </Principal>
+      <Dependent Role="Requisition">
+        <PropertyRef Name="FunctionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequisitionDetail_Requisition1">
+    <End Role="Requisition" Type="Self.Requisition" Multiplicity="1" />
+    <End Role="RequisitionDetail" Type="Self.RequisitionDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Requisition">
+        <PropertyRef Name="RequisitionId" />
+      </Principal>
+      <Dependent Role="RequisitionDetail">
+        <PropertyRef Name="RequisitionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UFSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccountTypes" EntityType="Self.AccountType" />
+    <EntitySet Name="Companies" EntityType="Self.Company" />
+    <EntitySet Name="Functions" EntityType="Self.Function" />
+    <EntitySet Name="Regions" EntityType="Self.Region" />
+    <EntitySet Name="Requisitions" EntityType="Self.Requisition" />
+    <EntitySet Name="RequisitionApprovalStatus" EntityType="Self.RequisitionApprovalStatu" />
+    <EntitySet Name="RequisitionAttachements" EntityType="Self.RequisitionAttachement" />
+    <EntitySet Name="RequisitionDetails" EntityType="Self.RequisitionDetail" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Requisition_Company" Association="Self.FK_Requisition_Company">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Requisition" EntitySet="Requisitions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requisition_Function" Association="Self.FK_Requisition_Function">
+      <End Role="Function" EntitySet="Functions" />
+      <End Role="Requisition" EntitySet="Requisitions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequisitionDetail_Requisition1" Association="Self.FK_RequisitionDetail_Requisition1">
+      <End Role="Requisition" EntitySet="Requisitions" />
+      <End Role="RequisitionDetail" EntitySet="RequisitionDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

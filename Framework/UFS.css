@@ -1,0 +1,226 @@
+﻿.validation {
+    color: red;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.ddlWidth260 {
+    width: 260px;
+    height: 30px;
+}
+
+.ddl {
+    border-color: #696b6f;
+}
+
+.textBox {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block;
+    width: 260px;
+    height: 30px;
+    /*width: 300px;
+    max-width: 100%;
+    /*border: 1px solid #000;*/
+    box-shadow: none;
+    border: 2px solid ccc;
+    border-radius: 4px;
+}
+
+    .textBox:focus {
+        background-color: #dddddd;
+        border: 3px solid #555;
+    }
+
+.textBox90percent {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block;
+    width: 90%;
+    height: 30px;
+    /*width: 300px;
+    max-width: 100%;
+    /*border: 1px solid #000;*/
+    box-shadow: none;
+    border: 2px solid ccc;
+    border-radius: 4px;
+}
+
+    .textBox90percent:focus {
+        background-color: #dddddd;
+        border: 3px solid #555;
+    }
+
+.width400 {
+    width: 400px;
+}
+
+.width400 {
+    width: 400px;
+}
+
+.height200 {
+    height: 200px;
+}
+
+.height100 {
+    height: 100px;
+}
+
+.height400 {
+    height: 400px;
+}
+
+.myButton {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+    width: 55px;
+    height: 30px;
+}
+
+    .myButton:hover {
+        background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+        background-color: #408c99;
+    }
+
+    .myButton:active {
+        position: relative;
+        top: 1px;
+    }
+
+.myButtonDelete {
+    box-shadow: 0px 10px 14px -7px #f29c93;
+    background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color: #fe1a00;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35;
+    width: 55px;
+    height: 30px;
+}
+
+    .myButtonDelete:hover {
+        background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+        background-color: #ce0100;
+    }
+
+    .myButtonDelete:active {
+        position: relative;
+        top: 1px;
+    }
+
+.myButtonApproved {
+    box-shadow: 0px 10px 14px -7px #3e7327;
+    background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+    background-color: #77b55a;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #5b8a3c;
+    width: 55px;
+    height: 30px;
+}
+
+    .myButtonApproved:hover {
+        background: linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+        background-color: #72b352;
+    }
+
+    .myButtonApproved:active {
+        position: relative;
+        top: 1px;
+    }
+
+.button,
+.button:hover {
+    border-radius: 2px;
+}
+
+.button {
+    background-color: #5cb85c;
+     background-color: #31a8e2;
+
+    
+    color: white;
+    border: 2px solid #5cb85c;
+}
+
+    .button:hover {
+        background-color: white;
+        color: #5cb85c;
+        border: 2px solid #5cb85c;
+        font-weight: bold;
+    }
+
+.width260 {
+    width: 260px;
+}
+
+.height35 {
+    height: 35px;
+}
+
+.padding11 {
+    padding-top: 11px;
+}
+.width350 {
+    width: 350px;
+}
+.ddlwidth350 {
+    width: 350px;
+    height: 30px;
+}
+.height70 {
+    height: 70px;
+}
+.width80p {
+    width: 100%;
+}
+
+.width200 {
+    width: 200px;
+}
+.width150 {
+    width: 150px;
+}
+.width100 {
+    width: 100px;
+}
+.width250 {
+    width: 250px;
+}
+.Label
+{
+
+}
+.ddlWidth200 {
+    width: 200px;
+    height: 30px;
+}
+

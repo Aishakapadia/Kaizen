@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UFSEntitiess2StoreContainer" CdmEntityContainer="UFSEntitiess">
+    <FunctionImportMapping FunctionImportName="Categorized_DashBaord" FunctionName="UFSEntitiess2.Store.Categorized_DashBaord">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="UFSEntitiess2.Categorized_DashBaord_Result">
+          <ScalarProperty Name="Categorization" ColumnName="Categorization" />
+          <ScalarProperty Name="MinGSV" ColumnName="MinGSV" />
+          <ScalarProperty Name="MaxGSV" ColumnName="MaxGSV" />
+          <ScalarProperty Name="MinTTS" ColumnName="MinTTS" />
+          <ScalarProperty Name="MaxTTS" ColumnName="MaxTTS" />
+          <ScalarProperty Name="NoOfContract" ColumnName="NoOfContract" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetRequisitionAuditById" FunctionName="UFSEntitiess2.Store.GetRequisitionAuditById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="UFSEntitiess2.GetRequisitionAuditById_Result">
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="UserProcess" ColumnName="UserProcess" />
+          <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+          <ScalarProperty Name="Created_date" ColumnName="Created_date" />
+          <ScalarProperty Name="GEOGRAPHY" ColumnName="GEOGRAPHY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="StoredProcedure_RequisitionSummary" FunctionName="UFSEntitiess2.Store.StoredProcedure_RequisitionSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="UFSEntitiess2.StoredProcedure_RequisitionSummary_Result">
+          <ScalarProperty Name="ContractType" ColumnName="ContractType" />
+          <ScalarProperty Name="Totalcount" ColumnName="Totalcount" />
+          <ScalarProperty Name="GSV" ColumnName="GSV" />
+          <ScalarProperty Name="TTS" ColumnName="TTS" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="AccountTypes">
+      <EntityTypeMapping TypeName="UFSEntitiess2.AccountType">
+        <MappingFragment StoreEntitySet="AccountType">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="AccountDescription" ColumnName="AccountDescription" />
+          <ScalarProperty Name="AccountLevel" ColumnName="AccountLevel" />
+          <ScalarProperty Name="AccountTitle" ColumnName="AccountTitle" />
+          <ScalarProperty Name="AccountTypeId" ColumnName="AccountTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="UFSEntitiess2.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CompanyCode" ColumnName="CompanyCode" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Functions">
+      <EntityTypeMapping TypeName="UFSEntitiess2.Function">
+        <MappingFragment StoreEntitySet="Function">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="FunctionId" ColumnName="FunctionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="UFSEntitiess2.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="UFSEntitiess2.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="RegionName" ColumnName="RegionName" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requisitions">
+      <EntityTypeMapping TypeName="UFSEntitiess2.Requisition">
+        <MappingFragment StoreEntitySet="Requisition">
+          <ScalarProperty Name="ExistingGM" ColumnName="ExistingGM" />
+          <ScalarProperty Name="IsNewUser" ColumnName="IsNewUser" />
+          <ScalarProperty Name="RequisitionCounter" ColumnName="RequisitionCounter" />
+          <ScalarProperty Name="IsTerminationRequested" ColumnName="IsTerminationRequested" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="RequisitionStatus" ColumnName="RequisitionStatus" />
+          <ScalarProperty Name="TotalMaxQtyMonthCases" ColumnName="TotalMaxQtyMonthCases" />
+          <ScalarProperty Name="TotalMinQtyMonthCases" ColumnName="TotalMinQtyMonthCases" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="CHComments" ColumnName="CHComments" />
+          <ScalarProperty Name="MFComments" ColumnName="MFComments" />
+          <ScalarProperty Name="FBPComments" ColumnName="FBPComments" />
+          <ScalarProperty Name="RegionHeadComments" ColumnName="RegionHeadComments" />
+          <ScalarProperty Name="RequestorComments" ColumnName="RequestorComments" />
+          <ScalarProperty Name="MaxTTS" ColumnName="MaxTTS" />
+          <ScalarProperty Name="MinTTS" ColumnName="MinTTS" />
+          <ScalarProperty Name="MaxGSV" ColumnName="MaxGSV" />
+          <ScalarProperty Name="MinGSV" ColumnName="MinGSV" />
+          <ScalarProperty Name="GM" ColumnName="GM" />
+          <ScalarProperty Name="ROI" ColumnName="ROI" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SKUDetail" ColumnName="SKUDetail" />
+          <ScalarProperty Name="PromotionDesc" ColumnName="PromotionDesc" />
+          <ScalarProperty Name="BrandUserCustomer" ColumnName="BrandUserCustomer" />
+          <ScalarProperty Name="CustomerBackground" ColumnName="CustomerBackground" />
+          <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+          <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+          <ScalarProperty Name="Geography" ColumnName="Geography" />
+          <ScalarProperty Name="FunctionId" ColumnName="FunctionId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requisition_Detail">
+      <EntityTypeMapping TypeName="UFSEntitiess2.Requisition_Detail">
+        <MappingFragment StoreEntitySet="Requisition_Detail">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="MaxQtyMonthCases" ColumnName="MaxQtyMonthCases" />
+          <ScalarProperty Name="MinQtyMonthCases" ColumnName="MinQtyMonthCases" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="SKUCode" ColumnName="SKUCode" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="RequisitionDetailsId" ColumnName="RequisitionDetailsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionApprovalStatusDetails">
+      <EntityTypeMapping TypeName="UFSEntitiess2.RequisitionApprovalStatusDetail">
+        <MappingFragment StoreEntitySet="RequisitionApprovalStatusDetail">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ApprovalStatus" ColumnName="ApprovalStatus" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="RequisitionApprovalStatusId" ColumnName="RequisitionApprovalStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionAttachements">
+      <EntityTypeMapping TypeName="UFSEntitiess2.RequisitionAttachement">
+        <MappingFragment StoreEntitySet="RequisitionAttachement">
+          <ScalarProperty Name="fileName" ColumnName="fileName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="format" ColumnName="format" />
+          <ScalarProperty Name="ContentData" ColumnName="ContentData" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="RequisitionAttachementComments" ColumnName="RequisitionAttachementComments" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="RequisitionAttachementId" ColumnName="RequisitionAttachementId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionPopCodes">
+      <EntityTypeMapping TypeName="UFSEntitiess2.RequisitionPopCode">
+        <MappingFragment StoreEntitySet="RequisitionPopCode">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PopCode" ColumnName="PopCode" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="RequisitionPopCodeId" ColumnName="RequisitionPopCodeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequisitionSKUDetails">
+      <EntityTypeMapping TypeName="UFSEntitiess2.RequisitionSKUDetail">
+        <MappingFragment StoreEntitySet="RequisitionSKUDetail">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="SKUCode" ColumnName="SKUCode" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="RequisitionSKUDetailId" ColumnName="RequisitionSKUDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="UFSEntitiess2.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="UFSEntitiess2.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="AccountTypeId" ColumnName="AccountTypeId" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_RequisitionByCustomerWise">
+      <EntityTypeMapping TypeName="UFSEntitiess2.V_RequisitionByCustomerWise">
+        <MappingFragment StoreEntitySet="V_RequisitionByCustomerWise">
+          <ScalarProperty Name="PopCode" ColumnName="PopCode" />
+          <ScalarProperty Name="CurrentStatus" ColumnName="CurrentStatus" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Decision" ColumnName="Decision" />
+          <ScalarProperty Name="MaxTTS" ColumnName="MaxTTS" />
+          <ScalarProperty Name="MinTTS" ColumnName="MinTTS" />
+          <ScalarProperty Name="MaxGSV" ColumnName="MaxGSV" />
+          <ScalarProperty Name="MinGSV" ColumnName="MinGSV" />
+          <ScalarProperty Name="CountryHeadUFSMessage" ColumnName="CountryHeadUFSMessage" />
+          <ScalarProperty Name="CountryHeadUFS" ColumnName="CountryHeadUFS" />
+          <ScalarProperty Name="ManagerFinanceMessage" ColumnName="ManagerFinanceMessage" />
+          <ScalarProperty Name="ManagerFinance" ColumnName="ManagerFinance" />
+          <ScalarProperty Name="FinanceBusinessPartnerMessage" ColumnName="FinanceBusinessPartnerMessage" />
+          <ScalarProperty Name="FinanceBusinessPartner" ColumnName="FinanceBusinessPartner" />
+          <ScalarProperty Name="GSMMessage" ColumnName="GSMMessage" />
+          <ScalarProperty Name="GSM" ColumnName="GSM" />
+          <ScalarProperty Name="RequestorComments" ColumnName="RequestorComments" />
+          <ScalarProperty Name="TM_AM" ColumnName="TM_AM" />
+          <ScalarProperty Name="ObjectiveAndDescription" ColumnName="ObjectiveAndDescription" />
+          <ScalarProperty Name="Background" ColumnName="Background" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ContractEndDate" ColumnName="ContractEndDate" />
+          <ScalarProperty Name="ContractStartDate" ColumnName="ContractStartDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="SrNo" ColumnName="SrNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_RequisitionBySku">
+      <EntityTypeMapping TypeName="UFSEntitiess2.v_RequisitionBySku">
+        <MappingFragment StoreEntitySet="v_RequisitionBySku">
+          <ScalarProperty Name="CurrentStatus" ColumnName="CurrentStatus" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Decision" ColumnName="Decision" />
+          <ScalarProperty Name="PopCode" ColumnName="PopCode" />
+          <ScalarProperty Name="CountryHeadUFSMessage" ColumnName="CountryHeadUFSMessage" />
+          <ScalarProperty Name="CountryHeadUFS" ColumnName="CountryHeadUFS" />
+          <ScalarProperty Name="ManagerFinanceMessage" ColumnName="ManagerFinanceMessage" />
+          <ScalarProperty Name="ManagerFinance" ColumnName="ManagerFinance" />
+          <ScalarProperty Name="FinanceBusinessPartnerMessage" ColumnName="FinanceBusinessPartnerMessage" />
+          <ScalarProperty Name="FinanceBusinessPartner" ColumnName="FinanceBusinessPartner" />
+          <ScalarProperty Name="GSMMessage" ColumnName="GSMMessage" />
+          <ScalarProperty Name="GSM" ColumnName="GSM" />
+          <ScalarProperty Name="RequestorComments" ColumnName="RequestorComments" />
+          <ScalarProperty Name="TM_AM" ColumnName="TM_AM" />
+          <ScalarProperty Name="PROMOTIONCODE" ColumnName="PROMOTIONCODE" />
+          <ScalarProperty Name="MaximumQuantity" ColumnName="MaximumQuantity" />
+          <ScalarProperty Name="MinimumQuantity" ColumnName="MinimumQuantity" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="SKUCode" ColumnName="SKUCode" />
+          <ScalarProperty Name="SKUName" ColumnName="SKUName" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ContractEndDate" ColumnName="ContractEndDate" />
+          <ScalarProperty Name="ContractStartDate" ColumnName="ContractStartDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="SrNo" ColumnName="SrNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_RequisitionBySku_OLD">
+      <EntityTypeMapping TypeName="UFSEntitiess2.v_RequisitionBySku_OLD">
+        <MappingFragment StoreEntitySet="v_RequisitionBySku_OLD">
+          <ScalarProperty Name="PopCode" ColumnName="PopCode" />
+          <ScalarProperty Name="UserComments" ColumnName="UserComments" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CountryHeadUFSMessage" ColumnName="CountryHeadUFSMessage" />
+          <ScalarProperty Name="CountryHeadUFS" ColumnName="CountryHeadUFS" />
+          <ScalarProperty Name="ManagerFinanceMessage" ColumnName="ManagerFinanceMessage" />
+          <ScalarProperty Name="ManagerFinance" ColumnName="ManagerFinance" />
+          <ScalarProperty Name="FinanceBusinessPartnerMessage" ColumnName="FinanceBusinessPartnerMessage" />
+          <ScalarProperty Name="FinanceBusinessPartner" ColumnName="FinanceBusinessPartner" />
+          <ScalarProperty Name="GSMMessage" ColumnName="GSMMessage" />
+          <ScalarProperty Name="GSM" ColumnName="GSM" />
+          <ScalarProperty Name="TM_AM" ColumnName="TM/AM" />
+          <ScalarProperty Name="PromotionCode" ColumnName="PromotionCode" />
+          <ScalarProperty Name="Maximum_Quantity" ColumnName="Maximum Quantity" />
+          <ScalarProperty Name="Minimum_Quantity" ColumnName="Minimum Quantity" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="SKUCode" ColumnName="SKUCode" />
+          <ScalarProperty Name="SKUName" ColumnName="SKUName" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer Name" />
+          <ScalarProperty Name="Contract_End_Date" ColumnName="Contract End Date" />
+          <ScalarProperty Name="Contract_Start_Date" ColumnName="Contract Start Date" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+          <ScalarProperty Name="RequisitionId" ColumnName="RequisitionId" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+          <ScalarProperty Name="SrNo" ColumnName="SrNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

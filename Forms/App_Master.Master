@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="App_Master.master.cs" Inherits="UFS_Application.Forms.App_Master" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../Framework/UFS.css" rel="stylesheet" />
+    <link href="../Framework/chosen_v1.8.7/chosen.css" rel="stylesheet" />
+
+
+    <link href="../Framework/JQuery/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" />
+    <link href="../Framework/BootStrap/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Framework/BootStrap/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="../Framework/JQuery/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+    <script src="../Framework/JQuery/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="../Framework/BootStrap/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+    <script src="../Framework/SweetAlert/sweetalert.min.js"></script>
+    <script src="../Framework/JS/UFS.js"></script>
+    <script src="../Framework/UFS.js"></script>
+    <link href="../Framework/DataGridStyle.css" rel="stylesheet" />
+    <link href="../Framework/chosen_v1.8.7/docsupport/prism.css" rel="stylesheet" />
+    <link href="../Framework/chosen_v1.8.7/docsupport/style.css" rel="stylesheet" />
+
+    <script>
+
+        $(document).ready(function () {
+            DatePicker(".calendar");
+            $('#fupRequisition').on('change', function () {
+                var numb = $(this)[0].files[0].size / 1024 / 1024;
+                numb = numb.toFixed(5);
+                if (numb > 4) {
+                    alert('to big, maximum is 4MB. You file size is: ' + numb + ' MB');
+                    //===============Clear control
+                    return false;
+                } else {
+                    // alert('it okey, your file has ' + numb + 'MB')
+                    return true;
+                }
+            });
+
+        });
+        function FileUploadSize() {
+            var numb = $('#fupRequisition')[0].files[0].size / 1024 / 1024;
+            numb = numb.toFixed(4);
+            if (numb > 4) {
+                alert('to big, maximum is 4MB11111. You file size is: ' + numb + ' MB');
+                //===============Clear control
+                return false;
+
+            } else {
+                //alert('it okey, your file has ' + numb + 'MB')
+                return true;
+            }
+        }
+
+
+
+
+    </script>
+
+    <style>
+        .ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #23143c;
+        }
+
+        .li {
+            float: left;
+        }
+
+            .li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                .li a:hover {
+                    background-color: #111;
+                }
+    </style>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <ul class="ul">
+                <a href="../Forms/Home.aspx" id="a_home" runat="server" class="nl-topMenu "><span>Home </span></a>
+                &nbsp; &nbsp; &nbsp; 
+                    <a href="../Forms/RequisitionMgmt.aspx" id="a_RequisitionMgmt" runat="server" class="nl-topMenu "><span>Requisition Mgmt</span></a>
+                &nbsp; &nbsp; &nbsp; 
+                 <a href="../Forms/ReportMgmt.aspx" id="a_ReportMgmt" runat="server" class="nl-topMenu "><span>Report Mgmt</span></a>
+                &nbsp; &nbsp; &nbsp; 
+
+                 <a href="../Forms/UserMgmt.aspx" id="a_UserMgmt" runat="server" class="nl-topMenu "><span>User Mgmt</span></a>
+                &nbsp; &nbsp; &nbsp; 
+                <span style="float: right">
+                    <asp:Label ID="lblUserName" runat="server" Font-Bold="True" ForeColor="White"></asp:Label>
+                    <br />
+                   
+                    <asp:LinkButton ID="lbtnChangePassword" runat="server" Text="Change Password" OnClick="lbtnChangePassword_Click"></asp:LinkButton>
+                       &nbsp; &nbsp; &nbsp; 
+                     <asp:LinkButton ID="lbtnLogout" runat="server" Text="SignOut" OnClick="lbtnLogout_Click"></asp:LinkButton>
+                </span>
+
+            </ul>
+
+        </div>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <%-- <div class="col-12" style="overflow: auto; padding-left: 10px; padding-right: 10px;">--%>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <%--  </div>--%>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="../Framework/chosen_v1.8.7/chosen.jquery.js"></script>
+        <script src="../Framework/chosen_v1.8.7/docsupport/prism.js"></script>
+        <script src="../Framework/chosen_v1.8.7/docsupport/init.js"></script>
+
+    </form>
+</body>
+</html>
